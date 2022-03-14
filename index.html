@@ -3,62 +3,77 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Styles -->
         <link href="static/styles/sheets/global.css" rel="stylesheet">
         <link href="static/styles/sheets/buttons.css" rel="stylesheet">
+        <link href="static/styles/sheets/layout.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet"> 
 
         <!-- Head -->
         <title>Laust Eberhardt Bonnesen</title>
-        <link href="static/images/shortcut_icon.jpg" type="image/jpg" rel="shortcut icon">
+        <link href="static/images/shortcut_icon.PNG" type="image/PNG" rel="shortcut icon">
     </head>
 
     <body>
         <header>
-            <section id="header_container">
+            <section>
                 <div>
                     <h1 id="header_title">Dear viewer</h1>
                 </div>
                 <div>
                     <p id="header_description">This is my CV, you can browse through each field, by pressing the buttons.</p>
-                </div>    
+                </div>
+            </section>
+                    
+            <section id="nav_section">
+                <ul id="navs">
+                    <li><a onclick="renderAboutMe()" class="button">About me</a></li>
+                    <li><a onclick="renderExperience()" class="button">My experience</a></li>
+                </ul>
+
             </section>
         </header>
 
-        <main>
-            <section id="main_container">
-                <section id="option_section">
-                    <button onclick="renderAboutMe()">About me</button>
-                    <button onclick="renderExperience()">My experience</button>
-                </section>
-
-                <section id="main_section">
-                    <!-- This content is created by body_controller.js -->
-                    <div id="main_content"></div>
-                </section>
-            </section>
-        </main>
+        <div id="main_content"></div>
 
         <footer>
-            <section id="footer_container">
-                <h4>Contact informations:</h4>
-                <div class="footer_row">
-                    <p>Email - laustslaustede@gmail.com</p>
-                </div>
-                <div class="footer_row">
-                    <p>Telefon - +45 60548098</p>
-                </div>
-                <div class="footer_row">
-                    <p>Country - Denmark</p>
-                </div>
-                <div class="footer_row">
-                    <p>Address - <a href="https://www.google.com/maps?q=kobbelv%C3%A6nget+57&sxsrf=APq-WBsvK4CL56Col-21-ZoGszp55BZcrQ:1647257661170&iflsig=AHkkrS4AAAAAYi82TaE3BrHUS0adaB2C4FwWO4brLccl&uact=5&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDICCCY6BwgjEOoCECc6BAgjECc6DgguEIAEELEDEMcBEK8BOgUILhCABDoICAAQgAQQsQM6EQguEIAEELEDEMcBEKMCENQCOggILhCABBDUAjoLCC4QsQMQxwEQrwE6CwguEIAEEMcBEK8BOggILhCABBCxAzoFCAAQsQM6BggAEBYQHlCeB1j7HWCYJ2gBcAB4AIABhAGIAbgHkgEDNC41mAEAoAEBsAEK&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjl3cSDwcX2AhWDu6QKHbmBDEMQ_AUoAXoECAEQAw">
-                        Kobbelvænget 57, 2. tv. 2700 Brønshøj.</a></p>
-                </div>
-                <div>
-                    <p>Github - <a href="https://github.com/Laustrup">https://github.com/Laustrup</a></p>
-                </div>
-            </section>
+            <table>
+                <tr class="footer_row">
+                    <th>Contact info</th>
+                </tr>
+                <tr class="footer_row">
+                    <td>Email: laustslaustede@gmail.com</td>
+                </tr>
+                <tr class="footer_row">
+                    <td>Telefon: +45 60548098</td>
+                </tr>
+                <tr class="footer_row">
+                    <td>Country: Denmark</td>
+                </tr>
+                <tr class="footer_row">
+                    <td>Address: <a href="https://www.google.com/maps?q=kobbelv%C3%A6nget+57&sxsrf=APq-WBsvK4CL56Col-21-ZoGszp55BZcrQ:1647257661170&iflsig=AHkkrS4AAAAAYi82TaE3BrHUS0adaB2C4FwWO4brLccl&uact=5&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDICCCY6BwgjEOoCECc6BAgjECc6DgguEIAEELEDEMcBEK8BOgUILhCABDoICAAQgAQQsQM6EQguEIAEELEDEMcBEKMCENQCOggILhCABBDUAjoLCC4QsQMQxwEQrwE6CwguEIAEEMcBEK8BOggILhCABBCxAzoFCAAQsQM6BggAEBYQHlCeB1j7HWCYJ2gBcAB4AIABhAGIAbgHkgEDNC41mAEAoAEBsAEK&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjl3cSDwcX2AhWDu6QKHbmBDEMQ_AUoAXoECAEQAw">
+                        Kobbelvænget 57, 2. tv. 2700 Brønshøj.</a>
+                    </td>
+                </tr>
+
+            </table>
+
+            <ul>
+                <li><p>Links:</p></li>
+                <li>
+                    <a href="https://github.com/Laustrup"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/laust-eberhardt-bonnesen-1629621b5/"><i class="fa fa-linkedin-square"></i></a>
+                </li>
+            </ul>
         </footer>
 
     </body>

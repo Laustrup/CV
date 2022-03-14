@@ -1,28 +1,24 @@
 *{
     margin: 0 auto;
+    padding: 0;
     justify-content: center;
+
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background-image: url("../ressources/background.PNG");
 }
 
 header{
-
-    border-radius: 15px;
-    border: 2px solid darkslategray;
-
-    background-image: linear-gradient(to bottom right, gray, beige);
-
+    display: flex;
+    
     margin-bottom: 40px;
-    margin-top: 40px;
+    padding: 30px 10%;
 
-    padding: 10px;
-
-    font-size: 17px;
-    text-align: center;
-
-    width: 780px;
-
-    color: black;
-
-    box-shadow: 5px 5px gray;
+    background-color: #24252A;
+    color: white;
+    font-size: 18px;
 }
 
 main{
@@ -40,6 +36,22 @@ main{
     border: 2px solid darkslategray;
     border-radius: 15px;
     box-shadow: 5px 5px gray
+}
+
+footer {
+    
+    /* Puts the footer at the bottom */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    
+    height: auto;
+    
+    background-color: #000;
+    color: white;
 }
 
 section {
