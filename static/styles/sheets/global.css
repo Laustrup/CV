@@ -54,6 +54,11 @@ footer {
     color: white;
 }
 
+#links{
+    display: flex;
+    flex-direction: column;
+}
+
 section {
     /* Order and display */
     display: flex;
