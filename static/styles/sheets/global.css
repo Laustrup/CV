@@ -30,7 +30,7 @@ main{
     align-items: center;
 
     /* Background */
-    background-image: linear-gradient(to bottom right, gray, beige);
+    background-image: linear-gradient(to bottom right, white, beige);
 
     /* Border */
     border: 2px solid darkslategray;
