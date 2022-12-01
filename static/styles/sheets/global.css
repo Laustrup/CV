@@ -53,9 +53,10 @@ main{
 
     /* Order and display */
     display: flex;
+    flex-direction: row;
 
     /* Background */
-    background-color: beige;
+    background-color: white;
 
     /* Border */
     border: 2px solid darkslategray;

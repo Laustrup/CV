@@ -50,9 +50,9 @@ const aboutMe = `
                                     ${bio}
                                 </div>
                         </section>
-                        <section>
+                        <div class="image_container">
                             <img src="static/images/laust.jpg">
-                        </section>
+                        </div>
                     </main>`;
 
 const experiences = `
@@ -64,9 +64,9 @@ const experiences = `
                                    ${experience}
                                 </div>
                         </section>
-                        <section>
+                        <div class="image_container">
                             <img src="static/images/laust.jpg">
-                        </section>
+                        </div>
                     </main>`;
 
 const languages = `
@@ -78,6 +78,9 @@ const languages = `
                                 ${listOfLanguage}
                             </div>
                         </section>
+                        <div class="image_container">
+                            <img src="static/images/laust.jpg">
+                        </div>
                     </main>`;
 
 // Functions that will render contents when called.
