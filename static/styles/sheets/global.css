@@ -42,6 +42,11 @@ header{
     font-size: 18px;
 }
 
+#header-left {
+    display: flex;
+    background-color: #24252A;
+}
+
 main{
     /* CENTERS */
     position: absolute;
