@@ -1,0 +1,50 @@
+.title {
+    font-size: 18px;
+}
+
+.description {
+    font-size: 10px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+    li {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+    
+    .description {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        font-size: 8px;
+    }
+    
+    .title {
+        font-size: 10px;
+    }
+    
+    .description {
+        font-size: 8px;
+    }
+} 
+
+@media screen and (max-width: 300px) {
+    li {
+        font-size: 5px;
+    }
+    
+    .title {
+        font-size: 8px;
+    }
+    
+    .description {
+        font-size: 5px;
+    }
+}

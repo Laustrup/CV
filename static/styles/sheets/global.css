@@ -64,13 +64,11 @@ main{
 }
 
 section {
-    
     /* ORDER */
     flex-direction: column;
     align-items: center;
     
     background-color: beige;
-    
 }
 
 .content h1, .content h2, .content h3, .content div, .content p, .content{
@@ -104,46 +102,13 @@ footer {
 
 /* RESPONSIVE */
 @media screen and (max-width: 1000px) {
-    header {
-        /* FONT */
-        font-size: 15px;
-        
-        /* SIZING */
-        margin-bottom: 20px;
-        padding: 30px 10%;
-    }
     
-    footer {
-        font-size: 10px;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    header {
-        /* FONT */
-        font-size: 10px;
-        
-        /* SIZING */
-        margin-bottom: 20px;
-        padding: 30px 10%;
-    }
     
-    footer {
-        font-size: 8px;
-    }
 } 
 
 @media screen and (max-width: 300px) {
-    header {
-        /* FONT */
-        font-size: 8px;
-        
-        /* SIZING */
-        margin-bottom: 20px;
-        padding: 30px 10%;
-    }
     
-    footer {
-        font-size: 5px;
-    }
 }
