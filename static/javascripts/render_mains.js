@@ -46,8 +46,8 @@ const aboutMe = `
                     <!-- This content is created by render_mains.js -->
                     <main>
                         <section id="main_section">
-                            <h3>Who am I?:</h3>
-                                <div id="content">
+                            <h3 class="content">Who am I?:</h3>
+                                <div class="content">
                                     ${bio}
                                 </div>
                             <img src="static/images/laust.jpg">
@@ -58,8 +58,8 @@ const experiences = `
                     <!-- This content is created by render_mains.js -->
                     <main>
                         <section id="main_section">
-                            <h3>Experiences:</h3>
-                                <div id="content">
+                            <h3 class="content">Experiences:</h3>
+                                <div class="content">
                                    ${experience}
                                 </div>
                             <img src="static/images/laust.jpg">
@@ -70,8 +70,8 @@ const laungages = `
                     <!-- This content is created by render_mains.js -->
                     <main>
                         <section id="main_section">
-                            <h3>Here is the laungages that I've mastered:</h3>
-                            <div id="content">
+                            <h3 class="content">Here is the laungages that I've mastered:</h3>
+                            <div class="content">
                                 ${listOfLaungages}
                             </div>
                         </section>
