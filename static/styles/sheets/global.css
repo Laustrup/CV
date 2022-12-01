@@ -51,19 +51,15 @@ main{
 }
 
 footer {
-    
+    /* DISPLAY */
+    display: flex;
+    justify-content: space-between;
+
     /* Puts the footer at the bottom */
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    
-    display: flex;
-    
-    height: auto;
-    
-    background-color: #000;
-    color: white;
 }
 
 #links{
