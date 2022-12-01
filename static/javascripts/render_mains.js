@@ -13,8 +13,8 @@ const experience = `
 
 `;
 
-const listOfLaungages = `
-<ul>
+const listOfLanguage = `
+<ul class="content">
     <li>
         Java.
     </li>
@@ -49,6 +49,8 @@ const aboutMe = `
                                 <div class="content">
                                     ${bio}
                                 </div>
+                        </section>
+                        <section>
                             <img src="static/images/laust.jpg">
                         </section>
                     </main>`;
@@ -61,17 +63,19 @@ const experiences = `
                                 <div class="content">
                                    ${experience}
                                 </div>
+                        </section>
+                        <section>
                             <img src="static/images/laust.jpg">
                         </section>
                     </main>`;
 
-const laungages = `
+const languages = `
                     <!-- This content is created by render_mains.js -->
                     <main>
                         <section id="main_section">
                             <h3 class="content">Here is the laungages that I've mastered:</h3>
                             <div class="content">
-                                ${listOfLaungages}
+                                ${listOfLanguage}
                             </div>
                         </section>
                     </main>`;
@@ -79,4 +83,4 @@ const laungages = `
 // Functions that will render contents when called.
 function renderAboutMe() {document.getElementById("main_content").innerHTML = aboutMe;}
 function renderExperience() {document.getElementById("main_content").innerHTML = experiences;}
-function renderLaungages() {document.getElementById("main_content").innerHTML = laungages;}
+function renderLaungages() {document.getElementById("main_content").innerHTML = languages;}
