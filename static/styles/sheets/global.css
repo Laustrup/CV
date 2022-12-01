@@ -1,6 +1,6 @@
 *{
     /* DISPLAY */
-    display: flex;
+
 
     /* SIZING */
     box-sizing: border-box;
@@ -26,6 +26,7 @@ body{
 
 header{
     /* DISPLAY */
+    display: flex;
     justify-content: space-between;
         
     /* SIZING */
@@ -40,6 +41,7 @@ main{
     width: 1000px;
 
     /* Order and display */
+    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -54,6 +56,7 @@ main{
 
 footer {
     /* DISPLAY */
+    display: flex;
     justify-content: space-between;
 
     /* Puts the footer at the bottom */
@@ -74,6 +77,47 @@ section {
 }
 
 /* RESPONSIVE */
-@media (max-width: 500px) {
+@media screen and (max-width: 1000px) {
+    header {
+        /* FONT */
+        font-size: 15px;
+        
+        /* SIZING */
+        margin-bottom: 20px;
+        padding: 30px 10%;
+    }
+    
+    footer {
+        font-size: 10px;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    header {
+        /* FONT */
+        font-size: 10px;
+        
+        /* SIZING */
+        margin-bottom: 20px;
+        padding: 30px 10%;
+    }
+    
+    footer {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        /* FONT */
+        font-size: 8px;
+        
+        /* SIZING */
+        margin-bottom: 20px;
+        padding: 30px 10%;
+    }
+    
+    footer {
+        font-size: 5px;
+    }
 }
