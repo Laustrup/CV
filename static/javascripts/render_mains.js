@@ -3,7 +3,7 @@
 const bio = `
 
 <h1>Dear reader</h1>
-<p>My name is Laust. I'm 26 years old</p>
+<p>My name is Laust. I'm 26 years old.</p>
 
 `;
 
@@ -47,7 +47,7 @@ const aboutMe = `
                     <main>
                         <section id="main_section">
                             <h3>Who am I?:</h3>
-                                <div>
+                                <div id="content">
                                     ${bio}
                                 </div>
                             <img src="static/images/laust.jpg">
@@ -59,7 +59,7 @@ const experiences = `
                     <main>
                         <section id="main_section">
                             <h3>Experiences:</h3>
-                                <div>
+                                <div id="content">
                                    ${experience}
                                 </div>
                             <img src="static/images/laust.jpg">
@@ -71,7 +71,7 @@ const laungages = `
                     <main>
                         <section id="main_section">
                             <h3>Here is the laungages that I've mastered:</h3>
-                            <div>
+                            <div id="content">
                                 ${listOfLaungages}
                             </div>
                         </section>

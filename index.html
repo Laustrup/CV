@@ -21,8 +21,8 @@
         <link href="static/images/shortcut_icon.PNG" type="image/PNG" rel="shortcut icon">
     </head>
 
-    <body>
-        <header>
+    <body id="body">
+        <header id="header">
             <section>
                 <div>
                     <h1 id="header_title">Lausts CV</h1>
@@ -30,6 +30,8 @@
                 <div>
                     <p id="header_description">In this CV-webiste you can browse through each field, by pressing the buttons on the right.</p>
                 </div>
+                
+                <div id="colourMode_button"></div>
             </section>
                     
             <section id="nav_section">
@@ -38,13 +40,12 @@
                     <li><a onclick="renderExperience()" class="button">My experience</a></li>
                     <li><a onclick="renderLaungages()" class="button">Laungages</a></li>
                 </ul>
-
             </section>
         </header>
 
         <div id="main_content"></div>
 
-        <footer>
+        <footer id="footer">
             <table>
                 <tr class="footer_row">
                     <th>Contact info</th>
@@ -59,8 +60,8 @@
                     <td>Country: Denmark</td>
                 </tr>
                 <tr class="footer_row">
-                    <td>Address: <a href="https://www.google.com/maps?q=kobbelv%C3%A6nget+57&sxsrf=APq-WBsvK4CL56Col-21-ZoGszp55BZcrQ:1647257661170&iflsig=AHkkrS4AAAAAYi82TaE3BrHUS0adaB2C4FwWO4brLccl&uact=5&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDICCCY6BwgjEOoCECc6BAgjECc6DgguEIAEELEDEMcBEK8BOgUILhCABDoICAAQgAQQsQM6EQguEIAEELEDEMcBEKMCENQCOggILhCABBDUAjoLCC4QsQMQxwEQrwE6CwguEIAEEMcBEK8BOggILhCABBCxAzoFCAAQsQM6BggAEBYQHlCeB1j7HWCYJ2gBcAB4AIABhAGIAbgHkgEDNC41mAEAoAEBsAEK&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjl3cSDwcX2AhWDu6QKHbmBDEMQ_AUoAXoECAEQAw">
-                        Kobbelvænget 57, 2. tv. 2700 Brønshøj.</a>
+                    <td>Address: <a href="https://www.google.com/maps?client=firefox-b-d&q=n%C3%B8rre+boulevard+98+k%C3%B8ge&um=1&ie=UTF-8&sa=X&ved=2ahUKEwi-8ouNl9j7AhUSXfEDHSQSDuUQ_AUoAXoECAIQAw">
+                        Nørre Boulevard 98, 1. tv. 4600 Køge.</a>
                     </td>
                 </tr>
 
@@ -91,6 +92,7 @@
 
     </body>
 
+    <script src="static/javascripts/editor.js" type="text/javascript" ></script>
     <script src="static/javascripts/render_mains.js" type="text/javascript" ></script>
 
 </html>
