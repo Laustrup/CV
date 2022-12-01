@@ -43,7 +43,13 @@ header{
 }
 
 main{
-    width: 800px;
+    /* CENTERS */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 700px;
 
     /* Order and display */
     display: flex;
@@ -58,20 +64,26 @@ main{
 }
 
 section {
+    
     /* ORDER */
     flex-direction: column;
     align-items: center;
     
     background-color: beige;
+    
 }
 
-#content h1, #content h2, #content h3, #content div {
+.content h1, .content h2, .content h3, .content div, .content p, .content{
     /* ORDER */
     flex-direction: column;
     align-items: center;
     
     background-color: beige;
     color: #24252A;
+}
+
+img {
+    display: flex;
 }
 
 footer {
@@ -119,7 +131,7 @@ footer {
     footer {
         font-size: 8px;
     }
-}
+} 
 
 @media screen and (max-width: 300px) {
     header {

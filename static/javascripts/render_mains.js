@@ -1,16 +1,15 @@
-
 // Contents of mains
 const bio = `
 
-<h1>Dear reader</h1>
-<p>My name is Laust. I'm 26 years old.</p>
+<h1 class="title">Dear reader</h1>
+<p class="description">My name is Laust. I'm 26 years old.</p>
 
 `;
 
 const experience = `
-<p>At the moment I'm studying computerscience at KEA in Copenhagen DK, where I'm learning about programming both teoreticly and hands on.</p>
-<p>We are learning fullstack programming, but I'm mostly interested in backup developing.</p>
-<p>I'm on the fourth semester at the moment.</p>
+<p class="description">At the moment I'm studying computerscience at KEA in Copenhagen DK, where I'm learning about programming both teoreticly and hands on.</p>
+<p class="description">We are learning fullstack programming, but I'm mostly interested in backup developing.</p>
+<p class="description">I'm on the fourth semester at the moment.</p>
 
 `;
 
