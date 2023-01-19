@@ -2,7 +2,7 @@
  * Will determine whether to run the project locally or GitHub Pages.
  * @type {boolean}
  */
-const isLocal = true;
+const isLocal = false;
 
 /**
  * By making this the page value, it will be able to redirect to the chosen destination.
