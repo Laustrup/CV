@@ -10,6 +10,10 @@
     font-size: 15px;
 }
 
+.small_text {
+    font-size: 8px;
+}
+
 #main_section h3, #main_section .title, #main_section .body_text {
     background-color: white;
     color: #24252A;
@@ -67,5 +71,9 @@
 
     .body_text {
         font-size: 3px;
+    }
+
+    .small_text {
+        font-size: 2px;
     }
 }

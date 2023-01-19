@@ -1,8 +1,4 @@
-html {
-
-}
-
-*{
+* {
     /* DISPLAY */
     
     /* SIZING */
@@ -23,13 +19,13 @@ html {
     font-weight: 500;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     /* background-image: url("../ressources/background.PNG"); */
 }
 
-header{
+header {
     /* DISPLAY */
     display: flex;
     justify-content: space-between;
@@ -47,7 +43,7 @@ header{
     background-color: #24252A;
 }
 
-main{
+main {
     /* CENTERS */
     position: absolute;
     top: 50%;
