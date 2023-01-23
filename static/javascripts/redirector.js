@@ -43,8 +43,9 @@ function redirect() {
     renderHeader();
     renderFooter();
 
+    console.log("Will redirect to " + page);
     switch (page) {
-        case frontPage: { changeURL(renderFrontPage()); break; }
+        case frontPage: { changeURL(renderFrontPage(undefined)); break; }
         case educationPage: { changeURL(renderEducation()); break; }
         case experiencePage: { changeURL(renderExperience()); break; }
         case languagesPage: { changeURL(renderLanguages()); break; }

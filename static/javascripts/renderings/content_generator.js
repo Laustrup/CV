@@ -16,6 +16,19 @@ const JANUARY = "Januar",
     DECEMBER = "December";
 
 /**
+ * Determines whether I'm looking for a job or not.
+ * @type {boolean}
+ */
+const isAvailable = true;
+
+/**
+ * Will be used to describe the job position, that I'm currently employed at, if I'm available, it will be undefined.
+ * @type {undefined}
+ */
+const currentCompany = !isAvailable ? "" : undefined,
+    currentPosition = !isAvailable ? "" : undefined;
+
+/**
  * The id of the main tag of from index.html.
  * @type {string}
  */
@@ -25,7 +38,10 @@ const mainTagId = "main_tag";
  * Will change the DOM of the main tag in the index.html with an innerHTML.
  * @param html The HTML that is wished to be rendered. Must be surrounded with ``.
  */
-function changeMain(html) { document.getElementById(mainTagId).innerHTML = html; }
+function changeMain(html) {
+    if (html !== undefined)
+        document.getElementById(mainTagId).innerHTML = html;
+}
 
 /**
  * Generates a field that is to be used for mentioning experience or related subject.
