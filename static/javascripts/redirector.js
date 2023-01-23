@@ -2,7 +2,7 @@
  * Will determine whether to run the project locally or GitHub Pages.
  * @type {boolean}
  */
-const isLocal = false;
+const isLocal = true;
 
 /**
  * By making this the page value, it will be able to redirect to the chosen destination.
@@ -19,7 +19,7 @@ const frontPage = "FRONTPAGE",
  * A value that determines which page is supposed to be redirected to.
  * May only be another constant value of redirector.js.
  */
-let page;
+let page = frontPage;
 
 /**
  * The path where the project will be deployed with GitHub Pages.
@@ -109,6 +109,8 @@ function projectManagementRedirect() {
 function changeURL(endpoint) {
     const url = domainPath + "/" + endpoint;
     console.log("URL:",url);
+    stickifyHeader();
+    stickifyFooter();
     history.pushState({}, null, url);
 }
 
