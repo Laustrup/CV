@@ -19,8 +19,8 @@ function renderExperience() {
         isCurrent: false,
         isVoluntary: false,
         description: descriptions.infomedia
-    };
-    const appAcademy = {
+    },
+    appAcademy = {
         company: "App Academy - Java Spring / Spring Boot",
         title: "Kursus konsulent",
         startMonth: JUNE,
@@ -30,8 +30,8 @@ function renderExperience() {
         isVoluntary: false,
         isCurrent: false,
         description: descriptions.appAcademy
-    };
-    const redBarnet = {
+    },
+    redBarnet = {
         company: "App Academy - Java Spring / Spring Boot",
         title: "Kursus konsulent",
         startMonth: NOVEMBER,
@@ -47,7 +47,7 @@ function renderExperience() {
         <section id="experience_section">
             <div id="experience_header">
                 <h2 class="title">Erfaring</h2>
-                <p class="description">Herunder bliver de forskellige punkter, hvor jeg har tilskaffet mig erfaring.</p>
+                <p class="description">Herunder bliver de forskellige punkter, hvor jeg har tilskaffet mig erfaring beskrevet.</p>
             </div>
             <div id="experience_fields">
                 ${generateField(infomedia)}
