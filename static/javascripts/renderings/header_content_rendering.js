@@ -14,7 +14,7 @@ function renderHeader() {
                 <li><a href="javascript:profileRedirect();" class="button">Profil</a></li>
                 <li><a href="javascript:educationRedirect();" class="button">Uddannelse</a></li>
                 <li><a href="javascript:experienceRedirect();" class="button">Erfaring</a></li>
-                <li><a href="javascript:LanguagesRedirect();" class="button">Sprog</a></li>
+                <li><a href="javascript:skillsRedirect();" class="button">kompetencer</a></li>
                 <li><a href="javascript:projectManagementRedirect();" class="button">Project styring</a></li>
             </ul>
         </section>

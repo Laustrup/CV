@@ -1,4 +1,0 @@
-function renderLanguages() {
-
-    return "languages";
-}

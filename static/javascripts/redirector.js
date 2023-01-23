@@ -48,7 +48,7 @@ function redirect() {
         case frontPage: { changeURL(renderFrontPage(undefined)); break; }
         case educationPage: { changeURL(renderEducation()); break; }
         case experiencePage: { changeURL(renderExperience()); break; }
-        case languagesPage: { changeURL(renderLanguages()); break; }
+        case languagesPage: { changeURL(renderSkills()); break; }
         case profilePage: { changeURL(renderProfile()); break; }
         case projectManagementPage: { changeURL(renderProjectManagement()); break; }
         default: { renderFrontPage("Sorry, couldn't find that content..."); }
@@ -82,7 +82,7 @@ function experienceRedirect() {
 /**
  * Will redirect the page to the languages page with the redirect() function.
  */
-function languagesRedirect() {
+function skillsRedirect() {
     page = languagesPage;
     redirect();
 }
