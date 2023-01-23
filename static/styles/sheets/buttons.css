@@ -1,14 +1,14 @@
 ul {
-    list-style: none;    
+    list-style: none;
 }
 
-li {
+li a {
     cursor: pointer;
-    transition: ease-out 0.3s;
-    padding: 0px 20px;
+    transition: all 0.3s ease-out 0s;
+    padding: 0 20px;
 }
 
-li:hover {
+li a:hover {
     color: green;
 }
 

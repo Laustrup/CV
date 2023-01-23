@@ -32,7 +32,7 @@ const currentCompany = !isAvailable ? "" : undefined,
  * The id of the main tag of from index.html.
  * @type {string}
  */
-const mainTagId = "main_tag";
+const mainTagId = "main";
 
 /**
  * Will change the DOM of the main tag in the index.html with an innerHTML.
@@ -54,7 +54,7 @@ function generateField(content) {
         <div class="content_field">
             <h3 class="field_company">${content.company}</h3>
             <h4 class="field_title">${content.title}</h4>
-            ${content.isVoluntary !== undefined || content.isVoluntary ? `<p class="small_text">Frivillig</p>` : ``}
+            ${content.isVoluntary !== undefined && content.isVoluntary ? `<p class="small_text">Frivillig</p>` : ``}
             <h5 class="period">Period: ${content.startMonth} ${content.startYear} -
                 ${content.isCurrent === undefined || !content.isCurrent ? content.endMonth + " " + content.endYear : "nuværende"}
             </h5>

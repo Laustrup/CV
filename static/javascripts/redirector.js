@@ -2,7 +2,7 @@
  * Will determine whether to run the project locally or GitHub Pages.
  * @type {boolean}
  */
-const isLocal = true;
+const isLocal = false;
 
 /**
  * By making this the page value, it will be able to redirect to the chosen destination.
@@ -11,9 +11,8 @@ const isLocal = true;
 const frontPage = "FRONTPAGE",
       educationPage = "EDUCATION",
       experiencePage = "EXPERIENCE",
-      languagesPage = "LANGUAGES",
-      profilePage = "PROFILE",
-      projectManagementPage = "PROJECT_MANAGEMENT";
+      skillsPage = "SKILLS",
+      profilePage = "PROFILE";
 
 /**
  * A value that determines which page is supposed to be redirected to.
@@ -48,9 +47,8 @@ function redirect() {
         case frontPage: { changeURL(renderFrontPage(undefined)); break; }
         case educationPage: { changeURL(renderEducation()); break; }
         case experiencePage: { changeURL(renderExperience()); break; }
-        case languagesPage: { changeURL(renderSkills()); break; }
+        case skillsPage: { changeURL(renderSkills()); break; }
         case profilePage: { changeURL(renderProfile()); break; }
-        case projectManagementPage: { changeURL(renderProjectManagement()); break; }
         default: { renderFrontPage("Sorry, couldn't find that content..."); }
     }
 }
@@ -83,7 +81,7 @@ function experienceRedirect() {
  * Will redirect the page to the languages page with the redirect() function.
  */
 function skillsRedirect() {
-    page = languagesPage;
+    page = skillsPage;
     redirect();
 }
 
@@ -96,22 +94,12 @@ function profileRedirect() {
 }
 
 /**
- * Will redirect the page to the project management page with the redirect() function.
- */
-function projectManagementRedirect() {
-    page = projectManagementPage;
-    redirect();
-}
-
-/**
  * Will change the URL without doing a rendering of the page.
  * @param endpoint The endpoint that is wished to be added to the url.
  */
 function changeURL(endpoint) {
     const url = domainPath + "/" + endpoint;
     console.log("URL:",url);
-    stickifyHeader();
-    stickifyFooter();
     history.pushState({}, null, url);
 }
 

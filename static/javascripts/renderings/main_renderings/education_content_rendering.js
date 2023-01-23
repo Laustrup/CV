@@ -49,6 +49,7 @@ function renderEducation() {
                 <h2 class="title">Uddannelse</h2>
                 <p class="description">Herunder bliver de forskellige punkter, hvor jeg har tilskaffet mig uddannelse beskrevet.</p>
             </div>
+            <hr />
             <div id="education_fields">
                 ${generateField(hf)}
                 ${generateField(dtu)}

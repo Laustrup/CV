@@ -49,6 +49,7 @@ function renderExperience() {
                 <h2 class="title">Erfaring</h2>
                 <p class="description">Herunder bliver de forskellige punkter, hvor jeg har tilskaffet mig erfaring beskrevet.</p>
             </div>
+            <hr />
             <div id="experience_fields">
                 ${generateField(infomedia)}
                 ${generateField(appAcademy)}

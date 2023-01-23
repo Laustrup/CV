@@ -6,8 +6,8 @@
 function renderFrontPage(message) {
     changeMain(`
         <section id="frontpage_section">
-            <img src="static/images/laust.jpg" alt="Frontpage billede">
             <h1 class="title">Velkommen til mit CV.</h1>
+            <hr />
             <p class="description">
                 Udforsk de forskellige punkter i headeren, hvor de ville blive vist her
                 eller læs mine kontaktoplysinger nederst i footeren.

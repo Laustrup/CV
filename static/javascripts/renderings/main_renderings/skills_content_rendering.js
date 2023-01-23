@@ -69,7 +69,7 @@ function renderSkills() {
         return html;
     }
 
-    function renderFilteringSection(elements) {
+    function renderFilteringSection() {
         function renderLanguageTypeOptions() {
             let html = ``;
             languageTypes.forEach((type) => html += `<option value="${type}">${type}</option>`);
@@ -83,7 +83,7 @@ function renderSkills() {
         }
 
         return `
-            <h5 class="title">${elements.title}</h5>
+            <h5 class="title">Filtering</h5>
             <label for="language_types">Type af sprog:</label>
             <input list="language_types_data" id="language_types"/>
             <datalist id="language_types_data" oninput="filtering()">
@@ -108,19 +108,31 @@ function renderSkills() {
             <section id="filtering_section">
                 ${renderFilteringSection()}
             </section>
-            <section id="languages_section">
-                ${displaySkills(languages)}
-            </section>
-            <section id="frameworks_section">
-                <section id="coding_frameworks_section">
-                    ${displaySkills(codingFrameworks)}
+            <hr />
+            <section id="skills_content_section">
+                <section class="skill_section" id="languages_section">
+                    <div>
+                        <h6 class="title">Sprog</h6>
+                    </div>
+                    ${displaySkills(languages)}
                 </section>
-                <section id="project_management_framework_section">
-                    ${displaySkills(projectManagingFrameworks)}
+                <section id="frameworks_section">
+                    <section class="skill_section" id="coding_frameworks_section">
+                        <div>
+                            <h6 class="title">Kodnings frameworks</h6>
+                        </div>
+                        ${displaySkills(codingFrameworks)}
+                    </section>
+                    <section class="skill_section" id="project_management_framework_section">
+                        <div>
+                            <h6 class="title">Projekt frameworks</h6>
+                        </div>
+                        ${displaySkills(projectManagingFrameworks)}
+                    </section>
                 </section>
             </section>
         </section>
     `);
 
-    return "languages";
+    return "skills";
 }

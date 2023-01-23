@@ -12,12 +12,13 @@ html {
     align-items: center;
 
     /* COLOURING */
-    background-color: white;
     color: #333;
+    background-color: transparent;
 
     /* FONT */
     font-family: 'Fredoka', sans-serif;
     font-weight: 500;
+
 }
 
 main {
@@ -25,6 +26,7 @@ main {
     flex-direction: row;
 
     margin: 30px 50%;
+    min-width: 1000px;
 }
 
 body {
@@ -32,6 +34,8 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    background-image: repeating-linear-gradient(to top left,hsl(40,30%,80%) 30px,hsl(40,30%,70%), hsl(40,30%,80%));
 }
 
 header {
@@ -39,6 +43,20 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    background-image: repeating-linear-gradient(45deg,hsl(40 30% 50%) 30px, hsl(65 20% 60%),hsl(40 30% 50%));
+    border-bottom: solid hsl(40 100% 20%) 2px;
+}
+
+#nav_links {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#translate_section {
+    display: flex;
+    flex-flow: column;
+    max-height: 50px;
 }
 
 footer {
@@ -47,4 +65,49 @@ footer {
     justify-content: space-between;
     width: 100%;
     margin-top: auto;
+}
+
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+}
+
+#experience_header {
+    margin-bottom: 30px;
+}
+
+hr {
+    margin: 20px;
+}
+
+.content_field {
+    margin: 20px 20px 20px 20px;
+}
+
+#skills_content_section {
+    display: flex;
+    flex-flow: row;
+}
+
+#skills_content_section section {
+    display: flex;
+    flex-flow: column;
+    margin: 50px 100px 50px 100px;
+}
+
+#skills_content_section section p {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 10px;
+}
+
+#filtering_section {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#filtering_section * {
+    margin: 10px;
 }
